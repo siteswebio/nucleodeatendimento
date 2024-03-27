@@ -108,10 +108,10 @@
     <h2>Créditos Cursados</h2>
 
     <label for="creditos-cursados">Créditos Cursados:</label>
-    <input type="number" id="creditos-cursados" name="creditos-cursados" required>
+    <input type="number" id="creditos-cursados" name="creditos-cursados" required onkeypress="if(event.keyCode == 13) calcularPorcentagem()">
 
     <label for="total-creditos">Total de Créditos do Curso:</label>
-    <input type="number" id="total-creditos" name="total-creditos" required>
+    <input type="number" id="total-creditos" name="total-creditos" required onkeypress="if(event.keyCode == 13) calcularPorcentagem()">
 
     <button type="button" onclick="calcularPorcentagem()">Calcular</button>
 </form>
